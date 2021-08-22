@@ -11,11 +11,10 @@ urls = re.findall(
     'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', urlStr)
 # number of urls.
 num = len(urls)
-print(urls[0:num+1])
+# print(urls[0:num+1])
 # got the list of urls from client.
 
 print("\n\n")
-
 
 # change url domain name and update in different list.
 replaced_url = []
@@ -23,10 +22,9 @@ for url in range(num):
     replacing_url = re.sub(r"youtube", "youtubepp", urls[url])
     replaced_url.append(replacing_url)
 
-print(replaced_url)
+# print(replaced_url)
 
-
-# Creates a new empty filefile
+# Create a new empty file with updated urls.
 with open('updated_url.txt', 'w') as ufile:
     ufile.writelines("% s\n" % data for data in replaced_url)
     ufile.close()
