@@ -1,5 +1,5 @@
 # Youtube Video Downloader
 
-## USed:
+## Used:
 * regex
 * python
