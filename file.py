@@ -14,7 +14,7 @@ num = len(urls)
 # print(urls[0:num+1])
 # got the list of urls from client.
 
-print("\n\n")
+# print("\n\n")
 
 # change url domain name and update in different list.
 replaced_url = []
